@@ -1,25 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import HeaderReima from './components/headerreima';
 
 function App() {
   return (
+    <>
+    <video playsInline autoPlay muted id="bgvid">
+    <source src="/bgv.mp4" type="video/mp4"/>
+    </video>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <HeaderReima></HeaderReima>
+      <div className="body">
+        <h1>REIMA STUDIO</h1>
+        <p>Rendre notre imagination réel d'une facon inimaginable</p>
+      </div>
     </div>
+  
+    
+   
+    </>
   );
 }
 
 export default App;
+
+/*
+ <div id="anim"></div>
+    { bodymovin.loadAnimation({
+      container: document.getElementById('anim'),
+      rendeer: 'svg',
+      autoplay: true,
+      path: 'data.json'
+      }) }
+    
+*/
